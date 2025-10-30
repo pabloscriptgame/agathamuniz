@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ágatha Muniz - Acompanhante Exclusiva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Ágatha Muniz, acompanhante trans de 24 anos. Discreta, carinhosa e pronta para te proporcionar momentos inesquecíveis. Atendimento via WhatsApp.">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Ágatha Muniz</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#caracteristicas">Detalhes</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="https://i.ibb.co/RkwgdHLk/byp4bl0.jpg" alt="Ágatha Muniz - Foto Principal" class="hero-img">
+        </div>
+        <div class="hero-content">
+            <h1>Ágatha Muniz</h1>
+            <p class="hero-subtitle">Trans • 24 anos • Estilo Namoradinha</p>
+            <p class="hero-price">R$ 180 (30 min) - Tenho local</p>
+            <a href="https://wa.me/5579996350888?text=Olá%20Ágatha,%20gostaria%20de%20agendar%20um%20encontro!" class="btn btn-primary" target="_blank">Agende pelo WhatsApp +55 79 99635-0888</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="sobre-content">
+                <p>Gosto de dar e receber carícias, educada, discreta, sou apertadinha e estilo namoradinha. Para te atender com total discrição e prazer. Tenho local.</p>
+                <div class="sobre-details">
+                    <h3>Atendo:</h3>
+                    <ul>
+                        <li>Homens</li>
+                        <li>Homens trans</li>
+                        <li>Mulheres trans</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="section caracteristicas">
+        <div class="container">
+            <h2 class="section-title">Características Físicas</h2>
+            <div class="caracteristicas-grid">
+                <div class="card">
+                    <h3>Gênero</h3>
+                    <p>Mulher trans<br>Nasceu do sexo masculino e identifica-se como mulher.</p>
+                </div>
+                <div class="card">
+                    <h3>Genitália</h3>
+                    <p>Possui pênis</p>
+                </div>
+                <div class="card">
+                    <h3>Preferência Sexual</h3>
+                    <p>Passivo<br>Recebe penetração</p>
+                </div>
+                <div class="card">
+                    <h3>Medidas</h3>
+                    <p>Peso: 62 kg<br>Altura: 1,68 m</p>
+                </div>
+                <div class="card">
+                    <h3>Aparência</h3>
+                    <p>Etnia: Pardo<br>Olhos: Castanho<br>Cabelo: Morena, Longo</p>
+                </div>
+                <div class="card">
+                    <h3>Outros</h3>
+                    <p>Tamanho do pé: 38<br>Silicone: Não<br>Tatuagens: Não<br>Piercings: Não<br>Tamanho do pênis: 20 cm<br>Fumante: Não informado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section galeria">
+        <div class="container">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/jZvCtsjX/IMG-20251030-WA0001.jpg" alt="Ágatha Muniz - Foto 1" onclick="openModal(this.src, this.alt)">
+                    <div class="overlay">Clique para ampliar</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Z60cqzTY/IMG-20251030-WA0002.jpg" alt="Ágatha Muniz - Foto 2" onclick="openModal(this.src, this.alt)">
+                    <div class="overlay">Clique para ampliar</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/RkwgdHLk/byp4bl0.jpg" alt="Ágatha Muniz - Foto Principal" onclick="openModal(this.src, this.alt)">
+                    <div class="overlay">Clique para ampliar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ágatha Muniz. Todos os direitos reservados.</p>
+            <p>Contato exclusivo via WhatsApp: <a href="https://wa.me/5579996350888" target="_blank">+55 79 99635-0888</a></p>
+            <p>Discrição e prazer garantidos.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para Galeria -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="caption" id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
